@@ -16,7 +16,7 @@ therefore
 
 taylor series of arctanx = x/1 - x^3/3 + x^5/5 ...
 
-https://www.desmos.com/calculator/noanuckuli?lang=fr
+https://www.desmos.com/calculator/wivsyrmkda
 
 evaluate this infinit sum at 1 ---> it tends to be Pi
 

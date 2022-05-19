@@ -2,13 +2,13 @@
 
 This application uses integral calculus to estimate the digits of π as described in [this document](PI-Calculator-java/Taylor_Series__Pi_approximation.pdf).
 
-##Usage
+## Usage
 
-###Java
+### Java
 
 You can launch the program without any command-line arguments and it will not show intermediate steps, and iterate the sum 1 000 times.
 
-####Precision
+#### Precision
 
 You can use `-i` followed by the number of iteration you would like the sum to be executed. For instance:
 
@@ -18,7 +18,7 @@ java PiCalculator.java -i 25
 
 ...will iterate through the loop 25 times.
 
-####Show intermediate steps
+#### Show intermediate steps
 
 By default, the program will not show the intermediate values of π. You can use `-s` to show them
 
@@ -26,7 +26,7 @@ By default, the program will not show the intermediate values of π. You can use
 java PiCalculator.java -s
 ```
 
-###Python
+### Python
 
 Simply execute `calculateur_pi.py` using Python 3 on the terminal.
 

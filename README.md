@@ -1,23 +1,43 @@
 # Pi-calculator
-Java project that calculate digits of Pi.
 
+This application uses integral calculus to estimate the digits of π as described in [this document](PI-Calculator-java/Taylor_Series__Pi_approximation.pdf).
 
-tan(π/4) = 1
+## Usage
 
-therefore
+### Java
 
-4arctan(1) = π
+You can launch the program without any command-line arguments and it will not show intermediate steps, and iterate the sum 1 000 times.
 
-d/dx arctan = 1/1+x^2
+#### Precision
 
-taylor series of 1/1+x^2 = 1 -x^2 + x^4 ...
+You can use `-i` followed by the number of iteration you would like the sum to be executed. For instance:
 
-therefore
+```shell
+java PiCalculator.java -i 25
+```
 
-taylor series of arctanx = x/1 - x^3/3 + x^5/5 ...
+...will iterate through the loop 25 times.
 
-https://www.desmos.com/calculator/imcpu46xpz 
+#### Show intermediate steps
 
-evaluate this infinit sum at 1 ---> it tends to be Pi
+By default, the program will not show the intermediate values of π. You can use `-s` to show them
 
-and thats it.
+```shell
+java PiCalculator.java -s
+```
+
+### Python
+
+Simply execute `calculateur_pi.py` using Python 3 on the terminal.
+
+```shell
+python3 calculateur_pi.py
+```
+
+The program will then ask you how many iteration of the loop you would like to run. If you would like 5 iteration of the loop for instance, you would enter 5.
+
+```
+Nombre de repetition de la boucle:
+
+5
+```
